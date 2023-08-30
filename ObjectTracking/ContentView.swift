@@ -14,8 +14,8 @@ struct ContentView: View {
     @State var currentDetectedObjects:[ImageProcessorResponseObject] = []
     @State var currentModel:AIModel = .inception_v4
     
-    var imageProvider = DeviceCameraImageProvider()
-    var imageProcessor = MLKitImageProcessor()
+    var imageProvider = DeviceCameraImageProvider() //LocalVideoImageProvider(videoName: "Road-traffic", extensionName: "mp4") // 
+    var imageProcessor = CoreMLImageProcessor() // MLKitImageProcessor()
     
     var body: some View {
         VStack {
@@ -61,7 +61,6 @@ struct ContentView: View {
         Task {
            let objects = try? await self.imageProcessor.processFrame(image, alreadyDetected: [])
             self.currentDetectedObjects = objects ?? []
-            print("objects found: \(objects?.count ?? 0)")
         }
     }
     

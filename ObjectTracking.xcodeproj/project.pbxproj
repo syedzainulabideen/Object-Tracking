@@ -8,6 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7F1728111213D9DFE348B345 /* Pods_ObjectTracking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BB20D8659D70E4A160AFAC2D /* Pods_ObjectTracking.framework */; };
+		8A44E05B2A9EFA18005DAE65 /* CoreMLImageProcessor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E05A2A9EFA18005DAE65 /* CoreMLImageProcessor.swift */; };
+		8A44E05D2A9EFE0B005DAE65 /* YOLOv3.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E05C2A9EFE0A005DAE65 /* YOLOv3.mlmodel */; };
+		8A44E05F2A9F04D4005DAE65 /* LocalVideoImageProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E05E2A9F04D4005DAE65 /* LocalVideoImageProvider.swift */; };
+		8A44E0622A9F08AD005DAE65 /* Road-traffic.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A44E0612A9F08AD005DAE65 /* Road-traffic.mp4 */; };
+		8A44E0642A9F0A3C005DAE65 /* YOLOv3Tiny.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E0632A9F0A3C005DAE65 /* YOLOv3Tiny.mlmodel */; };
+		8A44E0662A9F0C1D005DAE65 /* footage_white_com.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 8A44E0652A9F0C1D005DAE65 /* footage_white_com.mp4 */; };
+		8A44E0682A9F10CD005DAE65 /* yolov8n.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E0672A9F10CD005DAE65 /* yolov8n.mlpackage */; };
+		8A44E06A2A9F1908005DAE65 /* yolov8x.mlpackage in Sources */ = {isa = PBXBuildFile; fileRef = 8A44E0692A9F1908005DAE65 /* yolov8x.mlpackage */; };
 		8A578B1F2A95D587009552DC /* ObjectTrackingApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A578B1E2A95D587009552DC /* ObjectTrackingApp.swift */; };
 		8A578B212A95D587009552DC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8A578B202A95D587009552DC /* ContentView.swift */; };
 		8A578B232A95D589009552DC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8A578B222A95D589009552DC /* Assets.xcassets */; };
@@ -23,6 +31,14 @@
 
 /* Begin PBXFileReference section */
 		6877D0F16C18D85B84262E4C /* Pods-ObjectTracking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObjectTracking.debug.xcconfig"; path = "Target Support Files/Pods-ObjectTracking/Pods-ObjectTracking.debug.xcconfig"; sourceTree = "<group>"; };
+		8A44E05A2A9EFA18005DAE65 /* CoreMLImageProcessor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMLImageProcessor.swift; sourceTree = "<group>"; };
+		8A44E05C2A9EFE0A005DAE65 /* YOLOv3.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3.mlmodel; sourceTree = "<group>"; };
+		8A44E05E2A9F04D4005DAE65 /* LocalVideoImageProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalVideoImageProvider.swift; sourceTree = "<group>"; };
+		8A44E0612A9F08AD005DAE65 /* Road-traffic.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Road-traffic.mp4"; sourceTree = "<group>"; };
+		8A44E0632A9F0A3C005DAE65 /* YOLOv3Tiny.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = YOLOv3Tiny.mlmodel; sourceTree = "<group>"; };
+		8A44E0652A9F0C1D005DAE65 /* footage_white_com.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = footage_white_com.mp4; sourceTree = "<group>"; };
+		8A44E0672A9F10CD005DAE65 /* yolov8n.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8n.mlpackage; sourceTree = "<group>"; };
+		8A44E0692A9F1908005DAE65 /* yolov8x.mlpackage */ = {isa = PBXFileReference; lastKnownFileType = folder.mlpackage; path = yolov8x.mlpackage; sourceTree = "<group>"; };
 		8A578B1B2A95D587009552DC /* ObjectTracking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObjectTracking.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8A578B1E2A95D587009552DC /* ObjectTrackingApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObjectTrackingApp.swift; sourceTree = "<group>"; };
 		8A578B202A95D587009552DC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -60,6 +76,15 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8A44E0602A9F0878005DAE65 /* Videos */ = {
+			isa = PBXGroup;
+			children = (
+				8A44E0612A9F08AD005DAE65 /* Road-traffic.mp4 */,
+				8A44E0652A9F0C1D005DAE65 /* footage_white_com.mp4 */,
+			);
+			path = Videos;
+			sourceTree = "<group>";
+		};
 		8A578B122A95D587009552DC = {
 			isa = PBXGroup;
 			children = (
@@ -83,10 +108,11 @@
 			children = (
 				8A578B1E2A95D587009552DC /* ObjectTrackingApp.swift */,
 				8A578B202A95D587009552DC /* ContentView.swift */,
-				8A578B3E2A974375009552DC /* Models */,
 				8A578B342A9611AC009552DC /* Object Detection */,
 				8A578B332A95D5EA009552DC /* Image Provider */,
 				8A578B322A95D5E1009552DC /* Extensions */,
+				8A578B3E2A974375009552DC /* Models */,
+				8A44E0602A9F0878005DAE65 /* Videos */,
 				8A578B222A95D589009552DC /* Assets.xcassets */,
 				8A578B242A95D589009552DC /* Preview Content */,
 			);
@@ -113,8 +139,9 @@
 		8A578B332A95D5EA009552DC /* Image Provider */ = {
 			isa = PBXGroup;
 			children = (
-				8A578B2E2A95D5A3009552DC /* DeviceCameraImageProvider.swift */,
 				8A578B2F2A95D5A3009552DC /* ImageProvierProtocol.swift */,
+				8A578B2E2A95D5A3009552DC /* DeviceCameraImageProvider.swift */,
+				8A44E05E2A9F04D4005DAE65 /* LocalVideoImageProvider.swift */,
 			);
 			path = "Image Provider";
 			sourceTree = "<group>";
@@ -122,6 +149,7 @@
 		8A578B342A9611AC009552DC /* Object Detection */ = {
 			isa = PBXGroup;
 			children = (
+				8A44E05A2A9EFA18005DAE65 /* CoreMLImageProcessor.swift */,
 				8A578B382A972A3F009552DC /* MLKitImageProcessor.swift */,
 				8A578B3A2A972B27009552DC /* ImageProcessorProtocol.swift */,
 			);
@@ -131,6 +159,10 @@
 		8A578B3E2A974375009552DC /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				8A44E0632A9F0A3C005DAE65 /* YOLOv3Tiny.mlmodel */,
+				8A44E05C2A9EFE0A005DAE65 /* YOLOv3.mlmodel */,
+				8A44E0672A9F10CD005DAE65 /* yolov8n.mlpackage */,
+				8A44E0692A9F1908005DAE65 /* yolov8x.mlpackage */,
 				8A578B3F2A97437E009552DC /* inception_v4_1_metadata_1.tflite */,
 			);
 			path = Models;
@@ -206,6 +238,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8A578B402A97437E009552DC /* inception_v4_1_metadata_1.tflite in Resources */,
+				8A44E0662A9F0C1D005DAE65 /* footage_white_com.mp4 in Resources */,
+				8A44E0622A9F08AD005DAE65 /* Road-traffic.mp4 in Resources */,
 				8A578B262A95D589009552DC /* Preview Assets.xcassets in Resources */,
 				8A578B232A95D589009552DC /* Assets.xcassets in Resources */,
 			);
@@ -277,13 +311,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8A44E05D2A9EFE0B005DAE65 /* YOLOv3.mlmodel in Sources */,
 				8A578B312A95D5A3009552DC /* ImageProvierProtocol.swift in Sources */,
 				8A578B212A95D587009552DC /* ContentView.swift in Sources */,
 				8A578B3B2A972B27009552DC /* ImageProcessorProtocol.swift in Sources */,
+				8A44E0682A9F10CD005DAE65 /* yolov8n.mlpackage in Sources */,
 				8A578B3D2A972FF2009552DC /* ImageExtensions.swift in Sources */,
 				8A578B302A95D5A3009552DC /* DeviceCameraImageProvider.swift in Sources */,
+				8A44E06A2A9F1908005DAE65 /* yolov8x.mlpackage in Sources */,
 				8A578B392A972A3F009552DC /* MLKitImageProcessor.swift in Sources */,
+				8A44E05B2A9EFA18005DAE65 /* CoreMLImageProcessor.swift in Sources */,
+				8A44E05F2A9F04D4005DAE65 /* LocalVideoImageProvider.swift in Sources */,
 				8A578B1F2A95D587009552DC /* ObjectTrackingApp.swift in Sources */,
+				8A44E0642A9F0A3C005DAE65 /* YOLOv3Tiny.mlmodel in Sources */,
 				8A578B2D2A95D59D009552DC /* SampleBufferExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
